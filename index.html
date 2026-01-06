@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ask ChatGPT</title>
+</head>
+<body>
+<script>
+(function () {
+  let q = prompt("Ask ChatGPT:\n\n", "");
+  if (!q) return;
+
+  // Capitalise first character only
+  q = q.charAt(0).toUpperCase() + q.slice(1);
+
+  // Add ? if no punctuation at end
+  if (!/[.?!]$/.test(q)) q += "?";
+
+  // Open ChatGPT in a new tab
+  window.open(
+    "https://chatgpt.com/?prompt=" + encodeURIComponent(q),
+    "_blank"
+  );
+})();
+</script>
+</body>
+</html>
