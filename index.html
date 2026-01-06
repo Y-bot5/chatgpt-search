@@ -19,10 +19,9 @@
   // Add ? if no punctuation at end
   if (!/[.?!]$/.test(q)) q += "?";
 
-  // Open ChatGPT in a new tab
+  // Open ChatGPT
   window.open(
-    "https://chatgpt.com/?prompt=" + encodeURIComponent(q),
-    "_blank"
+    "https://chatgpt.com/?prompt=" + encodeURIComponent(q)
   );
 })();
 </script>
