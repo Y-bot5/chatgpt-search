@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
   <meta charset="utf-8">
   <title>Ask ChatGPT</title>
 </head>
@@ -12,7 +15,7 @@
 
   // Capitalise first character only
   q = q.charAt(0).toUpperCase() + q.slice(1);
-
+  
   // Add ? if no punctuation at end
   if (!/[.?!]$/.test(q)) q += "?";
 
